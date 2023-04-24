@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111832;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.box{
+    width: 100%;
+    height: 90%;
+    
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 15%;
+    width: 100%;
+
+}
+
+.box .content .top{
+    width: 50%;
+    height: 40px;
+    background-color: #292828;
+    border-radius: 6px 6px 0 0 ;
+
+    display: flex;
+}
+
+.box .content .top .points{
+    display: flex;
+    width: 9%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box .content .top .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.box .content .top .circle.red{
+    background-color: #FA564F;
+}
+
+.box .content .top .circle.yellow{
+    background-color: #FEBC2C;
+}
+
+.box .content .top .circle.green{
+    background-color: #21C945;
+}
+
+.box .content .top .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 81%;
+}
+
+.box .content .top .title p{
+    font-size: 14px;
+    color: white;
+}
+
+.box .content .input{
+    width: 50%;
+    height: 57px;
+    display: flex;
+}
+
+.box .content .input input{
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.box .result{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 50%;
+}
+
+.box .result .topModal{
+    width: 100%;
+    height: 5%;
+    background-color: #292828;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    border-radius: 10px 10px 0 0;
+}
+
+.box .result .topModal p{
+    margin-left: 2%;
+    color: rgb(95, 95, 95);
+}
+
+.box .result .modal{
+    width: 100%;
+    height: 70%;
+    background-color: #17181b;
+    font-size: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.box .result .modal #firstParam{
+    margin-top: 5%;
+}
+
+.box .result .modal p.params{
+    color: white;
+}
+
+.box .result .modal .text{
+    margin-left: 10%;
+}
+
+.box .result .modal .text .attribute{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.box .result .modal .text .attribute .key{
+    color: #88B6B9;
+    margin-right: 1%;
+}
+
+.box .result .modal .text .attribute .value{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.box .result .modal .text .attribute .value .apiText{
+    margin-left: 2%;
+    width: 80%;
+    color: #B68379;
+}
